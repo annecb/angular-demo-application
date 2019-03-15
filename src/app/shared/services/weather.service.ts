@@ -12,7 +12,7 @@ export class WeatherService {
 
   //FREE JSON API : https://www.apixu.com/api-explorer.aspx
   //You need to provide your API KEY here
-  public apiKey: string = "3f58499f4cdc4a04851130252191403";
+  public apiKey: string = "[YOUR_API_KEY]";
   public weather_api_url: string = "http://api.apixu.com/v1/current.json"
 
   //Inject HTTPCLIENT
