@@ -1,0 +1,27 @@
+<mat-sidenav-container class="app-container">
+  <!-- Left content -->
+  <mat-sidenav class="app-sidenav" mode="side" opened>
+    <div class="app-icon">
+      <mat-icon [inline]="true">filter_drama</mat-icon>
+    </div>
+    <div class="app-title">Weather App</div>
+  </mat-sidenav>
+
+  <!-- Right content -->
+  <mat-sidenav-content>
+    <!-- Top toolbar with the input -->
+    <form #heroForm="ngForm" (ngSubmit)="getCityWeather()">
+      <mat-form-field class="app-form-input">
+        <input matInput [(ngModel)]="city" placeholder="Enter city name" name="cityName">
+      </mat-form-field>
+      <button mat-icon-button type="submit" class="btn btn-success">
+        <mat-icon>search</mat-icon>
+      </button>
+    </form>
+
+    <!-- Show result in a card -->
+    <app-weather-card *ngIf="weatherResult" [weatherData]="weatherResult"></app-weather-card>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

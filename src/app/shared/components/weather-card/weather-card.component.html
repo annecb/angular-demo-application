@@ -1,0 +1,32 @@
+<mat-card class="weather-card">
+
+  <!--Card header -->
+  <mat-card-header class="weather-card-header">
+    <div class="flex-initial">
+      <div mat-card-avatar>
+        <img [src]="weatherData.current.condition.icon">
+      </div>
+    </div>
+    <span class="flex-auto"></span>
+    <div class="flex-initial">
+      <mat-card-title>{{weatherData.location.name}}</mat-card-title>
+      <mat-card-subtitle>{{weatherData.location.region}}</mat-card-subtitle>
+      <mat-card-subtitle>{{weatherData.location.country}}</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+
+  <!-- Card Content -->
+  <mat-card-content>
+   <span class="weather-card-content"> Humidity : {{weatherData.current.humidity}} % </span>
+   <span class="weather-card-content"> Cloud cover : {{weatherData.current.cloud}} % </span>
+   <span class="weather-card-content">  Wind Speed : {{weatherData.current.wind_kph}} km/h</span>
+  </mat-card-content>
+
+  <!-- Card footer -->
+  <mat-card-footer class="weather-card-footer">
+      <span class="flex-initial">{{weatherData.current.temp_c}} °C</span>
+      <span class="flex-auto"></span>
+      <span class="flex-initial">{{weatherData.current.condition.text}}</span>
+  </mat-card-footer>
+
+</mat-card>

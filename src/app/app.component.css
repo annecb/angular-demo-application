@@ -1,0 +1,31 @@
+.app-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.app-sidenav{
+    width:200px;
+    background-color: #0a3d62;
+    color: #ffffff;
+    text-align: center;
+}
+
+.app-icon {
+    font-size: 80px;
+    margin-top:20px;
+}
+
+.app-title{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+  .app-form-input {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 15px;
+  }

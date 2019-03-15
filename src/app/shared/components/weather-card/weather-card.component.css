@@ -1,0 +1,28 @@
+.weather-card {
+    max-width: 400px;
+    margin-left: 15px;
+  }
+
+  .weather-card-header{
+      display:flex;
+  }
+
+  .weather-card-content{
+      display:block;
+  }
+  
+  .flex-auto {
+    flex: auto;
+}
+
+.flex-initial {
+    flex: initial;
+}
+
+.weather-card-footer {
+    display: flex;
+    background-color: #0a3d62;
+    color:#ffffff;
+    bottom: 0;
+    padding: 8px 10px;
+}
