@@ -1,6 +1,8 @@
-# ApplicationDemo
+# ApplicationDemo in Angular 6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+This application was developed for the article "How to set up of an Angular application for yours API" available in the french magazine "Programmez" (N°231 - 28/06/2019).
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5. 
 
 ## Development server
 
